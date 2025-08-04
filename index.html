@@ -3,69 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple HTML5 page demonstrating semantic structure, accessibility best practices, and basic SEO optimization.">
-    <meta name="keywords" content="HTML5, Accessibility, SEO, Semantic Elements">
+    <meta name="description" content="An HTML5 webpage demonstrating lists, tables, embedded media, and an accessible form with native validation.">
     <meta name="author" content="Olana Kenea">
-    <title>HTML5 Accessibility & SEO Basics</title>
+    <title>HTML5 Enhanced Content & Forms</title>
 </head>
 <body>
     <header>
-        <h1>Accessible and SEO-Friendly Web Page</h1>
-        <p>Welcome to this example webpage that demonstrates semantic HTML5, accessibility features, and basic SEO techniques.</p>
+        <h1>HTML5 Enhanced Content & Mastering Forms</h1>
+        <p>This page demonstrates the use of lists, tables, media, and an advanced HTML5 form with accessibility and validation features.</p>
     </header>
 
-    <nav aria-label="Main Navigation">
-        <ul>
-            <li><a href="#about" title="Learn more about this page">About</a></li>
-            <li><a href="#features" title="See the features of this page">Features</a></li>
-            <li><a href="#contact" title="Get in touch with us">Contact</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section id="about">
-            <h2>About This Assignment</h2>
-            <p>This assignment focuses on building a webpage with proper semantic structure, improved accessibility for screen readers, and SEO-friendly content.</p>
+        <!-- Section: Lists -->
+        <section>
+            <h2>Popular Web Technologies (List Example)</h2>
+            <p>Here are some widely used technologies in web development:</p>
+            <ul>
+                <li>HTML5 - for semantic structure</li>
+                <li>CSS3 - for styling and layouts</li>
+                <li>JavaScript - for interactivity</li>
+                <li>Accessibility Standards (WCAG) - for inclusive design</li>
+            </ul>
+
+            <h3>Steps to Build a Web Page (Ordered List)</h3>
+            <ol>
+                <li>Plan and design your content</li>
+                <li>Write semantic HTML</li>
+                <li>Style with CSS</li>
+                <li>Enhance with JavaScript if needed</li>
+            </ol>
         </section>
 
-        <section id="features">
-            <h2>Key Features Implemented</h2>
-
-            <article>
-                <h3>Semantic Structure</h3>
-                <p>HTML5 elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> are used to create a logical content hierarchy.</p>
-            </article>
-
-            <article>
-                <h3>Accessibility Enhancements</h3>
-                <p>Attributes such as <code>aria-label</code> and properly associated form labels ensure that the page is navigable by assistive technologies.</p>
-            </article>
-
-            <article>
-                <h3>SEO Optimization</h3>
-                <p>Clear headings, meta descriptions, and meaningful text improve how search engines index this page.</p>
-            </article>
+        <!-- Section: Table -->
+        <section>
+            <h2>Web Browser Market Share (Table Example)</h2>
+            <table border="1" cellpadding="5" summary="A table displaying browser usage statistics.">
+                <caption>2025 Browser Usage Statistics</caption>
+                <thead>
+                    <tr>
+                        <th>Browser</th>
+                        <th>Market Share</th>
+                        <th>Supported Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Google Chrome</td>
+                        <td>65%</td>
+                        <td>HTML5, CSS3, ES2023</td>
+                    </tr>
+                    <tr>
+                        <td>Mozilla Firefox</td>
+                        <td>12%</td>
+                        <td>HTML5, CSS3, ES2023</td>
+                    </tr>
+                    <tr>
+                        <td>Safari</td>
+                        <td>19%</td>
+                        <td>HTML5, CSS3</td>
+                    </tr>
+                    <tr>
+                        <td>Edge</td>
+                        <td>4%</td>
+                        <td>HTML5, CSS3</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
-        <section id="contact">
-            <h2>Contact Form</h2>
-            <form aria-label="Contact Form">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required aria-required="true"><br><br>
+        <!-- Section: Media -->
+        <section>
+            <h2>Embedded Media Example</h2>
+            <figure>
+                <img src="https://via.placeholder.com/400x200" alt="Placeholder sample image" width="400">
+                <figcaption>An example image embedded using HTML5 <code>&lt;img&gt;</code>.</figcaption>
+            </figure>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required aria-required="true"><br><br>
+            <h3>Sample Audio</h3>
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required aria-required="true"></textarea><br><br>
+            <h3>Sample Video</h3>
+            <video controls width="400">
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
 
-                <button type="submit">Send</button>
+        <!-- Section: Form -->
+        <section>
+            <h2>HTML5 Contact & Registration Form</h2>
+            <form aria-label="User Registration Form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" autocomplete="name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email"><br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="+251900000000" pattern="^\+?\d{10,13}$" required><br><br>
+
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <label for="gender">Gender:</label><br>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" required minlength="4" maxlength="15"><br><br>
+
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required minlength="6" pattern="(?=.*[A-Z])(?=.*\d).{6,}" title="At least 6 characters, 1 uppercase, and 1 number"><br><br>
+
+                    <label for="confirm_password">Confirm Password:</label><br>
+                    <input type="password" id="confirm_password" name="confirm_password" required minlength="6"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    
+                    <p>Subscribe to our newsletter?</p>
+                    <label><input type="radio" name="newsletter" value="yes" required> Yes</label>
+                    <label><input type="radio" name="newsletter" value="no"> No</label><br><br>
+
+                    <label><input type="checkbox" name="terms" required> I agree to the terms and conditions</label><br><br>
+                </fieldset>
+
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Accessible HTML5 Demo. All Rights Reserved.</p>
+        <p>&copy; 2025 Olana Kenea. All rights reserved.</p>
     </footer>
 </body>
 </html>
